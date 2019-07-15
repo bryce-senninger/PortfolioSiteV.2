@@ -1,0 +1,126 @@
+html{
+  min-height: 100%;
+  /* overflow: hidden; */
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: rgba(0, 0, 0, 0.75);
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: rgb(198, 209, 198);  
+}
+h1{
+    font-family: 'Anonymous Pro', monospace;
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0, 0, 0, 0.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-weight: bold; 
+    font-size: 50px;
+}
+
+h1{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(0, 0, 0, 0.75);}
+  to{border-right-color: transparent;}
+}
+
+p {
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+}
+
+.jumbotron{
+  padding-bottom: 10px;
+  border: black;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.jumbotron:hover{
+  transform: scale(1.1);
+}
+
+nav{
+    font-weight: bold;
+    color: black;
+    padding-top: 195px;
+    font-size: 30px;
+    padding-left: 50px;
+} 
+
+a{
+    color: black;
+}
+
+img{
+  max-width: 700px;
+}
+
+img{
+  margin-left: 100px;
+  background: #fff;
+  display: block;
+  width: 645px;
+  height: 420px;
+  padding: 10px;
+  border-radius: 2px 2px 2px 2px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.bottomImg{
+    position:relative;
+    bottom:100px;
+    left:350px;
+}
+
+.images {
+  padding-top: 50px;
+  padding-left: 370px;
+  width: 1500px;
+}
+
+.bottomImg:hover {
+  transform: scale(1.1);
+}
+
+.topImg:hover {
+  transform: scale(1.1);
+}
+
+.navAndImages{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+nav a{
+  flex-wrap: nowrap;
+  width:250px
+}
+
+a:hover{
+  border-style: solid;
+  border-color: black;
+  border-width: 0px;
+  border-bottom-width:1px;
+  border-left-width: 4px;
+  color: rgb(124, 124, 124);
+  -webkit-text-stroke: 1px black;
+
+}
