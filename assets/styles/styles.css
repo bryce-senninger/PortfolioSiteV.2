@@ -1,14 +1,13 @@
 html{
   min-height: 100%;
-  /* overflow: hidden; */
 }
-body{
-  height: calc(100vh - 8em);
-  padding: 4em;
-  color: rgba(0, 0, 0, 0.75);
-  font-family: 'Anonymous Pro', monospace;  
-  background-color: rgb(198, 209, 198);  
+
+body {
+  color: black;
+  font-family: 'Anonymous Pro', monospace;
+  background-color: rgb(198, 209, 198);
 }
+
 h1{
     font-family: 'Anonymous Pro', monospace;
     position: relative;
@@ -51,10 +50,6 @@ p {
   border-style: solid;
 }
 
-.jumbotron:hover{
-  transform: scale(1.1);
-}
-
 nav{
     font-weight: bold;
     color: black;
@@ -92,7 +87,7 @@ img{
 
 .images {
   padding-top: 50px;
-  padding-left: 370px;
+  padding-left: 70px;
   width: 1500px;
 }
 
@@ -111,7 +106,7 @@ img{
 
 nav a{
   flex-wrap: nowrap;
-  width:250px
+  width:250px;
 }
 
 a:hover{
@@ -119,8 +114,7 @@ a:hover{
   border-color: black;
   border-width: 0px;
   border-bottom-width:1px;
-  border-left-width: 4px;
+  border-right-width: 3px;
   color: rgb(124, 124, 124);
-  -webkit-text-stroke: 1px black;
-
+  transform: scale(1.1);
 }
