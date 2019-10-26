@@ -1,40 +1,58 @@
-html{
+html {
   min-height: 100%;
 }
 
 body {
   color: black;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: "Anonymous Pro", monospace;
   background-color: rgb(198, 209, 198);
+  width: 100%;
 }
 
-h1{
-    font-family: 'Anonymous Pro', monospace;
-    position: relative;
-    top: 50%;  
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(0, 0, 0, 0.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-    font-weight: bold; 
-    font-size: 50px;
+.landingJumbo {
+  font-family: "Anonymous Pro", monospace;
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+
+  font-size: 50px;
 }
 
-h1{
+h1 {
+  font-family: "Anonymous Pro", monospace;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.landingJumbo {
   animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+    blinkTextCursor 500ms steps(44) infinite normal;
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 24em;
+  }
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(0, 0, 0, 0.75);}
-  to{border-right-color: transparent;}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
 
 p {
@@ -43,52 +61,66 @@ p {
   text-align: center;
 }
 
-.jumbotron{
+.jumbotron {
   padding-bottom: 10px;
   border: black;
   border-width: 1px;
   border-style: solid;
 }
 
-nav{
-    font-weight: bold;
-    color: black;
-    padding-top: 195px;
-    font-size: 30px;
-    padding-left: 50px;
-} 
-
-a{
-    color: black;
+nav {
+  font-weight: bold;
+  color: black;
+  padding-top: 195px;
+  font-size: 30px;
+  padding-left: 50px;
 }
 
-img{
+a {
+  color: black;
+}
+
+img {
   max-width: 700px;
+  max-height: 600px;
 }
 
-img{
+img {
   margin-left: 100px;
   background: #fff;
   display: block;
-  width: 645px;
-  height: 420px;
+  /* width: 645px;
+  height: 420px; */
   padding: 10px;
   border-radius: 2px 2px 2px 2px;
-  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
+  -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+    0 0 40px rgba(0, 0, 0, 0.1) inset;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-.bottomImg{
-    position:relative;
-    bottom:100px;
-    left:350px;
+.bottomImg {
+  position: relative;
+  bottom: 100px;
+  left: 350px;
+}
+
+.bioWrap {
+  position: relative;
+  bottom: 100px;
+  left: 350px;
 }
 
 .images {
   padding-top: 50px;
   padding-left: 70px;
   width: 1500px;
+}
+
+.bottomImg,
+.topImg {
+  transition: transform 0.5s ease;
 }
 
 .bottomImg:hover {
@@ -99,22 +131,52 @@ img{
   transform: scale(1.1);
 }
 
-.navAndImages{
+.navAndImages {
   display: flex;
   flex-wrap: nowrap;
 }
 
-nav a{
+nav a {
   flex-wrap: nowrap;
-  width:250px;
+  width: 250px;
+  transition: transform 0.5s ease;
 }
 
-a:hover{
+a:hover {
   border-style: solid;
   border-color: black;
   border-width: 0px;
-  border-bottom-width:1px;
+  border-bottom-width: 1px;
   border-right-width: 3px;
-  color: rgb(124, 124, 124);
+  color: rgb(255, 255, 255);
+  transform: scale(1.1);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.jumbotron {
+  width: 90%;
+  margin: 0 auto;
+}
+display-4 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.bioWrap {
+  background: black;
+  border-style: solid;
+  border-width: 10px;
+  border-color: white;
+  width: 80%;
+  transition: transform 0.5s ease;
+}
+
+.bioWrap:hover {
   transform: scale(1.1);
 }
+
+/* p {
+  color: white;
+} */
