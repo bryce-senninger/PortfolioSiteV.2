@@ -129,6 +129,7 @@ img {
 
 .topImg:hover {
   transform: scale(1.1);
+  z-index: 99;
 }
 
 .navAndImages {
@@ -142,7 +143,7 @@ nav a {
   transition: transform 0.5s ease;
 }
 
-a:hover {
+.nav-link:hover {
   border-style: solid;
   border-color: black;
   border-width: 0px;
@@ -177,6 +178,11 @@ display-4 {
   transform: scale(1.1);
 }
 
-/* p {
+.bioText {
   color: white;
-} */
+}
+
+.icon {
+  padding: 0;
+  border-radius: 90px;
+}
